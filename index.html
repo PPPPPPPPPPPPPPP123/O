@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
@@ -32,11 +31,10 @@
   }
   
   #i{
-    display: block;
-    position: relative;
-    top: 30px;
-    left: 0%;
-    right: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   body{
@@ -44,11 +42,6 @@
     flex: 1;
     display: flex;
   		align-items: center;
-    margin: 0;
-  		position: absolute;
-  		top: 30%;
-  		-ms-transform: translateY(-50%);
-  		transform: translateY(-50%);
   }
   
   img{
@@ -67,13 +60,13 @@
   <title>Google</title>
 </head>
 <body>
-    <span id="i">
+    <div id="i">
   				<img alt="Google" width="480" src="https://oldgoogle.neocities.org/images/logos/ps_logo2.png">
   				<form method="GET" action="https://oldgoogle.neocities.org/2010/search">
    				 <input id="p" type="text" name="q" placeholder="Search… ">
     				<button id="b" type="submit">Search</button>
   				</form>
- 		 </span>
+ 		 </div>
 
 </body>
 </html>
